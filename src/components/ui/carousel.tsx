@@ -23,18 +23,10 @@ export function Carousel() {
   return (
     <div className="w-full bg-black py-16 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
-        <div className="animate-scroll flex space-x-16">
+        <div className="animate-scroll flex space-x-16 py-12">
           {logos.map((logo, index) => (
             <img
               key={index}
-              src={logo.src}
-              alt={logo.alt}
-              className="max-h-12 object-contain"
-            />
-          ))}
-          {logos.map((logo, index) => (
-            <img
-              key={`duplicate-${index}`}
               src={logo.src}
               alt={logo.alt}
               className="max-h-12 object-contain"
@@ -45,5 +37,3 @@ export function Carousel() {
     </div>
   );
 }
-
-export default Carousel;
