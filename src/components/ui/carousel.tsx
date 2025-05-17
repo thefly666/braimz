@@ -13,17 +13,27 @@ const logos = [
 
 export function Carousel() {
   return (
-    <div className="w-full bg-black py-16 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
-        <div className="animate-scroll flex space-x-16 py-12">
-          {logos.map((logo, index) => (
-            <img
-              key={index}
-              src={`/logos/${logo}`}
-              alt={`Logo ${index + 1}`}
-              className="max-h-12 object-contain"
-            />
-          ))}
+    <div className="w-full py-12 bg-black/50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="relative overflow-hidden">
+          <div className="animate-scroll flex space-x-16 py-12">
+            {logos.map((logo, index) => (
+              <img
+                key={index}
+                src={`/logos/${logo}`}
+                alt={`Partner Logo ${index + 1}`}
+                className="h-8 w-auto object-contain opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+              />
+            ))}
+            {logos.map((logo, index) => (
+              <img
+                key={`duplicate-${index}`}
+                src={`/logos/${logo}`}
+                alt={`Partner Logo ${index + 1}`}
+                className="h-8 w-auto object-contain opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
