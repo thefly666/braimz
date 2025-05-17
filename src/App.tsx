@@ -4,7 +4,7 @@ import { NavBarDemo } from './components/NavBarDemo';
 import { ProjectsSection } from './components/ProjectsSection';
 import { Footer } from './components/Footer';
 import { AISolutionsSection } from './components/AISolutionsSection';
-import { Carousel } from './components/ui/carousel';
+import { Logos3 } from './components/ui/logos3';
 import { ServicesSection } from './components/ServicesSection';
 import { PricingSection } from './components/PricingSection';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -16,7 +16,7 @@ function App() {
       <ErrorBoundary>
         <main>
           <SplineSceneBasic />
-          <Carousel />
+          <Logos3 />
         </main>
       </ErrorBoundary>
       <ProjectsSection />
