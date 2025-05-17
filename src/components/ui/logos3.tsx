@@ -1,5 +1,4 @@
-import { cn } from "@/lib/utils";
-import { Factory } from "lucide-react";
+import { cn } from "@/lib/utils"
 
 const logos = [
   { src: "/images/logos/logo_authentica.png", alt: "Authentica" },
@@ -10,28 +9,28 @@ const logos = [
   { src: "/images/logos/logo_wanted.png", alt: "Wanted" },
   { src: "/images/logos/logo_youtubecondensed.png", alt: "YouTube Condensed" },
   { src: "/images/logos/logo_zapai.png", alt: "ZapAI" }
-];
+]
 
 export function Logos3() {
   return (
-    <div className="w-full py-12 bg-black overflow-hidden">
+    <div className="w-full bg-black/90 py-12 overflow-hidden">
       <div className="relative w-full">
-        <div className="flex space-x-8 animate-scroll whitespace-nowrap">
-          {logos.map((logo, i) => (
-            <img
-              key={i}
-              src={logo.src}
-              alt={logo.alt}
-              className="h-8 w-auto object-contain opacity-50 hover:opacity-75 transition-opacity"
-            />
-          ))}
-          {logos.map((logo, i) => (
-            <img
-              key={`repeat-${i}`}
-              src={logo.src}
-              alt={logo.alt}
-              className="h-8 w-auto object-contain opacity-50 hover:opacity-75 transition-opacity"
-            />
+        {/* First row of logos */}
+        <div className="flex space-x-12 animate-scroll">
+          {logos.concat(logos).map((logo, idx) => (
+            <div
+              key={idx}
+              className={cn(
+                "shrink-0 flex items-center justify-center",
+                "w-[200px] h-[80px] rounded-lg"
+              )}
+            >
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                className="max-w-[160px] max-h-[60px] object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
           ))}
         </div>
       </div>

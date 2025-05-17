@@ -145,13 +145,13 @@ button:focus-visible {
   .animation-spotlight {
     animation: spotlight 2000ms ease 750ms 1 forwards;
   }
-
+  
   .animate-scroll {
-    animation: scroll 30s linear infinite;
+    animation: scroll 40s linear infinite;
   }
-
+  
   @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-50% - 1rem)); }
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
   }
 }
