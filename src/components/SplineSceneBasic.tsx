@@ -38,7 +38,7 @@ export function SplineSceneBasic() {
               console.log('Attempted path:', img.src);
             }}
             onLoad={() => console.log('Logo loaded successfully')}
-            src="assets/images/Braimz_Logo_White.png"
+            src="/assets/images/Braimz_Logo_White.png"
             alt="Braimz Logo" 
             className="h-16 w-auto object-contain mb-8"
           />
