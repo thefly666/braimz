@@ -21,16 +21,33 @@ export function Logos3() {
     <div className="w-full bg-black py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="overflow-hidden" ref={emblaRef}>
-          <div className="flex gap-4">
-            {logos.map((logo, index) => (
-              <div key={index} className="flex-[0_0_auto]">
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  className="h-12 w-auto object-contain"
-                />
+          <div className="flex gap-4 animate-scroll">
+            <div className="flex items-center gap-4 min-w-full">
+              <div className="w-48 h-12 flex items-center justify-center">
+                <img src="/src/assets/images/logos/logo_authentica.png" alt="Authentica" className="h-12 w-auto object-contain" />
               </div>
-            ))}
+              <div className="w-48 h-12 flex items-center justify-center">
+                <img src="/src/assets/images/logos/logo_codeverify.png" alt="CodeVerify" className="h-12 w-auto object-contain" />
+              </div>
+              <div className="w-48 h-12 flex items-center justify-center">
+                <img src="/src/assets/images/logos/logo_hometrics.png" alt="Hometrics" className="h-12 w-auto object-contain" />
+              </div>
+              <div className="w-48 h-12 flex items-center justify-center">
+                <img src="/src/assets/images/logos/logo_leadlink.png" alt="LeadLink" className="h-12 w-auto object-contain" />
+              </div>
+              <div className="w-48 h-12 flex items-center justify-center">
+                <img src="/src/assets/images/logos/logo_trendswap.png" alt="TrendSwap" className="h-12 w-auto object-contain" />
+              </div>
+              <div className="w-48 h-12 flex items-center justify-center">
+                <img src="/src/assets/images/logos/logo_wanted.png" alt="Wanted" className="h-12 w-auto object-contain" />
+              </div>
+              <div className="w-48 h-12 flex items-center justify-center">
+                <img src="/src/assets/images/logos/logo_youtubecondensed.png" alt="YouTube Condensed" className="h-12 w-auto object-contain" />
+              </div>
+              <div className="w-48 h-12 flex items-center justify-center">
+                <img src="/src/assets/images/logos/logo_zapai.png" alt="ZapAI" className="h-12 w-auto object-contain" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
