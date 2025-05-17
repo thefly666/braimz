@@ -1,59 +1,32 @@
-import { cn } from "@/lib/utils";
-
-const logos = [
-  {
-    src: "/images/logos/logo_authentica.png",
-    alt: "Authentica Logo"
-  },
-  {
-    src: "/images/logos/logo_codeverify.png",
-    alt: "CodeVerify Logo"
-  },
-  {
-    src: "/images/logos/logo_hometrics.png",
-    alt: "Hometrics Logo"
-  },
-  {
-    src: "/images/logos/logo_leadlink.png",
-    alt: "LeadLink Logo"
-  },
-  {
-    src: "/images/logos/logo_trendswap.png",
-    alt: "TrendSwap Logo"
-  },
-  {
-    src: "/images/logos/logo_wanted.png",
-    alt: "Wanted Logo"
-  },
-  {
-    src: "/images/logos/logo_youtubecondensed.png",
-    alt: "YouTube Condensed Logo"
-  },
-  {
-    src: "/images/logos/logo_zapai.png",
-    alt: "ZapAI Logo"
-  }
-];
+import { cn } from "@/lib/utils"
 
 export function Logos3() {
   return (
-    <div className="w-full bg-black py-12 overflow-hidden">
-      <div className="relative w-full">
-        <div className="flex space-x-16 animate-scroll">
-          {logos.concat(logos).map((logo, idx) => (
-            <div
-              key={idx}
-              className="flex-none w-[200px] h-[100px] flex items-center justify-center"
-            >
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                className="max-w-full max-h-full object-contain filter grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-              />
-            </div>
-          ))}
+    <div className="w-full bg-black py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="relative flex overflow-x-hidden">
+          <div className="animate-scroll flex space-x-16 py-12">
+            <img src="images/logos/logo_authentica.png" alt="Authentica" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_codeverify.png" alt="CodeVerify" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_hometrics.png" alt="Hometrics" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_leadlink.png" alt="LeadLink" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_trendswap.png" alt="TrendSwap" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_wanted.png" alt="Wanted" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_youtubecondensed.png" alt="YouTube Condensed" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_zapai.png" alt="ZapAI" className="max-h-12 w-auto object-contain" />
+          </div>
+          <div className="animate-scroll flex space-x-16 py-12" aria-hidden="true">
+            <img src="images/logos/logo_authentica.png" alt="Authentica" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_codeverify.png" alt="CodeVerify" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_hometrics.png" alt="Hometrics" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_leadlink.png" alt="LeadLink" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_trendswap.png" alt="TrendSwap" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_wanted.png" alt="Wanted" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_youtubecondensed.png" alt="YouTube Condensed" className="max-h-12 w-auto object-contain" />
+            <img src="images/logos/logo_zapai.png" alt="ZapAI" className="max-h-12 w-auto object-contain" />
+          </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
