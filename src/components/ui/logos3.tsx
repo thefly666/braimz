@@ -48,10 +48,7 @@ export function Logos3() {
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className={cn(
-                  "max-w-[160px] max-h-[60px] object-contain",
-                  "opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
-                )}
+                className="max-w-full max-h-full object-contain filter grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
               />
             </div>
           ))}
