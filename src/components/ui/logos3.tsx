@@ -21,16 +21,6 @@ export function Logos3() {
           <img src={logoYouTubeCondensed} alt="YouTubeCondensed" className="max-h-12 object-contain" />
           <img src={logoZapAI} alt="ZapAI" className="max-h-12 object-contain" />
         </div>
-        <div className="animate-scroll flex space-x-16 py-12" aria-hidden="true">
-          <img src={logoAuthentica} alt="Authentica" className="max-h-12 object-contain" />
-          <img src={logoCodeVerify} alt="CodeVerify" className="max-h-12 object-contain" />
-          <img src={logoHometrics} alt="Hometrics" className="max-h-12 object-contain" />
-          <img src={logoLeadLink} alt="LeadLink" className="max-h-12 object-contain" />
-          <img src={logoTrendSwap} alt="TrendSwap" className="max-h-12 object-contain" />
-          <img src={logoWanted} alt="Wanted" className="max-h-12 object-contain" />
-          <img src={logoYouTubeCondensed} alt="YouTubeCondensed" className="max-h-12 object-contain" />
-          <img src={logoZapAI} alt="ZapAI" className="max-h-12 object-contain" />
-        </div>
       </div>
     </div>
   )
