@@ -1,14 +1,14 @@
-import React from 'react';
+import * as React from "react";
 
 const logos = [
-  'logo_authentica.png',
-  'logo_codeverify.png',
-  'logo_hometrics.png',
-  'logo_leadlink.png',
-  'logo_trendswap.png',
-  'logo_wanted.png',
-  'logo_youtubecondensed.png',
-  'logo_zapai.png',
+  "/logos/logo_authentica.png",
+  "/logos/logo_codeverify.png",
+  "/logos/logo_hometrics.png",
+  "/logos/logo_leadlink.png",
+  "/logos/logo_trendswap.png",
+  "/logos/logo_wanted.png",
+  "/logos/logo_youtubecondensed.png",
+  "/logos/logo_zapai.png"
 ];
 
 export function Carousel() {
@@ -16,24 +16,18 @@ export function Carousel() {
     <div className="w-full py-12 bg-black/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="relative overflow-hidden">
-          <div className="flex space-x-16 animate-scroll">
-            {/* First set of logos */}
-            {logos.map((logo, index) => (
-              <img
+          <div className="flex animate-scroll space-x-16">
+            {[...logos, ...logos].map((logo, index) => (
+              <div
                 key={index}
-                src={`/logos/${logo}`}
-                alt={`Client Logo ${index + 1}`}
-                className="h-12 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300"
-              />
-            ))}
-            {/* Duplicate set for seamless scrolling */}
-            {logos.map((logo, index) => (
-              <img
-                key={`duplicate-${index}`}
-                src={`/logos/${logo}`}
-                alt={`Client Logo ${index + 1}`}
-                className="h-12 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300"
-              />
+                className="flex-none w-[150px] h-[60px] flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300"
+              >
+                <img
+                  src={logo}
+                  alt={`Partner Logo ${index + 1}`}
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
             ))}
           </div>
         </div>
