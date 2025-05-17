@@ -1,27 +1,62 @@
-import logoAuthentica from '@/assets/logos/logo_authentica.png'
-import logoCodeVerify from '@/assets/logos/logo_codeverify.png'
-import logoHometrics from '@/assets/logos/logo_hometrics.png'
-import logoLeadLink from '@/assets/logos/logo_leadlink.png'
-import logoTrendSwap from '@/assets/logos/logo_trendswap.png'
-import logoWanted from '@/assets/logos/logo_wanted.png'
-import logoYouTubeCondensed from '@/assets/logos/logo_youtubecondensed.png'
-import logoZapAI from '@/assets/logos/logo_zapai.png'
+import { cn } from "@/lib/utils";
+
+const logos = [
+  {
+    src: "/images/logos/logo_authentica.png",
+    alt: "Authentica Logo"
+  },
+  {
+    src: "/images/logos/logo_codeverify.png",
+    alt: "CodeVerify Logo"
+  },
+  {
+    src: "/images/logos/logo_hometrics.png",
+    alt: "Hometrics Logo"
+  },
+  {
+    src: "/images/logos/logo_leadlink.png",
+    alt: "LeadLink Logo"
+  },
+  {
+    src: "/images/logos/logo_trendswap.png",
+    alt: "TrendSwap Logo"
+  },
+  {
+    src: "/images/logos/logo_wanted.png",
+    alt: "Wanted Logo"
+  },
+  {
+    src: "/images/logos/logo_youtubecondensed.png",
+    alt: "YouTube Condensed Logo"
+  },
+  {
+    src: "/images/logos/logo_zapai.png",
+    alt: "ZapAI Logo"
+  }
+];
 
 export function Logos3() {
   return (
-    <div className="w-full bg-black py-16 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
-        <div className="animate-scroll flex space-x-16 py-12">
-          <img src={logoAuthentica} alt="Authentica" className="max-h-12 object-contain" />
-          <img src={logoCodeVerify} alt="CodeVerify" className="max-h-12 object-contain" />
-          <img src={logoHometrics} alt="Hometrics" className="max-h-12 object-contain" />
-          <img src={logoLeadLink} alt="LeadLink" className="max-h-12 object-contain" />
-          <img src={logoTrendSwap} alt="TrendSwap" className="max-h-12 object-contain" />
-          <img src={logoWanted} alt="Wanted" className="max-h-12 object-contain" />
-          <img src={logoYouTubeCondensed} alt="YouTubeCondensed" className="max-h-12 object-contain" />
-          <img src={logoZapAI} alt="ZapAI" className="max-h-12 object-contain" />
+    <div className="w-full bg-black py-12 overflow-hidden">
+      <div className="relative w-full">
+        <div className="flex space-x-16 animate-scroll">
+          {logos.concat(logos).map((logo, idx) => (
+            <div
+              key={idx}
+              className="flex-none w-[200px] h-[100px] flex items-center justify-center"
+            >
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                className={cn(
+                  "max-w-[160px] max-h-[60px] object-contain",
+                  "opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+                )}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
-  )
+  );
 }

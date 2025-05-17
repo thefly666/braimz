@@ -29,6 +29,7 @@ export function SplineSceneBasic() {
       />
       
       <div className="flex flex-col md:flex-row h-full max-w-7xl mx-auto">
+        {/* Left content - Text */}
         <div className="w-full md:w-[40%] p-4 sm:p-6 md:p-8 flex flex-col justify-center items-center">
           <img 
             src="/images/Briamz Logo White.png" 
@@ -48,6 +49,7 @@ export function SplineSceneBasic() {
           </button>
         </div>
         
+        {/* Right content - 3D Scene */}
         <div className="w-full md:w-[60%] relative flex items-center justify-center overflow-visible mt-8 md:mt-0 md:pl-8">
           <SplineScene 
             scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
