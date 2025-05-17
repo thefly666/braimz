@@ -1,22 +1,14 @@
 import React from 'react';
-import logoAuthentica from '@/assets/logos/logo_authentica.png';
-import logoCodeVerify from '@/assets/logos/logo_codeverify.png';
-import logoHometrics from '@/assets/logos/logo_hometrics.png';
-import logoLeadLink from '@/assets/logos/logo_leadlink.png';
-import logoTrendSwap from '@/assets/logos/logo_trendswap.png';
-import logoWanted from '@/assets/logos/logo_wanted.png';
-import logoYouTubeCondensed from '@/assets/logos/logo_youtubecondensed.png';
-import logoZapAI from '@/assets/logos/logo_zapai.png';
 
 const logos = [
-  { src: logoAuthentica, alt: 'Authentica' },
-  { src: logoCodeVerify, alt: 'CodeVerify' },
-  { src: logoHometrics, alt: 'Hometrics' },
-  { src: logoLeadLink, alt: 'LeadLink' },
-  { src: logoTrendSwap, alt: 'TrendSwap' },
-  { src: logoWanted, alt: 'Wanted' },
-  { src: logoYouTubeCondensed, alt: 'YouTubeCondensed' },
-  { src: logoZapAI, alt: 'ZapAI' }
+  'logo_authentica.png',
+  'logo_codeverify.png',
+  'logo_hometrics.png',
+  'logo_leadlink.png',
+  'logo_trendswap.png',
+  'logo_wanted.png',
+  'logo_youtubecondensed.png',
+  'logo_zapai.png',
 ];
 
 export function Carousel() {
@@ -27,8 +19,8 @@ export function Carousel() {
           {logos.map((logo, index) => (
             <img
               key={index}
-              src={logo.src}
-              alt={logo.alt}
+              src={`/logos/${logo}`}
+              alt={`Logo ${index + 1}`}
               className="max-h-12 object-contain"
             />
           ))}
