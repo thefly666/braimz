@@ -34,7 +34,7 @@ export function SplineSceneBasic() {
           <img 
             src="/images/Briamz Logo White.png" 
             alt="Braimz Logo" 
-            className="h-12 sm:h-16 w-auto object-contain mb-8 sm:mb-10"
+            className="h-16 w-auto object-contain mb-8"
           />
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-[#558dca] text-center leading-tight">
             We Think Ahead
