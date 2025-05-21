@@ -19,8 +19,8 @@ function App() {
           <Logos3 />
         </main>
       </ErrorBoundary>
-      <AboutUsSection />
       <ProjectsSection />
+      <AboutUsSection />
       <ServicesSection />
       <PricingSection />
       <Footer />
