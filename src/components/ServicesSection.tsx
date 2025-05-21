@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: "RAG Systems",
-    description: "Unlock unparalleled information retrieval capabilities. We build custom RAG (Retrieval-Augmented Generation) pipelines that combine private knowledge bases and live data sources, delivering AI outputs grounded in verifiable facts — tailored for your business.",
+    description: "Seamlessly integrate AI into your existing tools and systems. We ensure smooth compatibility, scalability, and adoption, empowering your team to leverage AI effectively across all business operations.",
     icon: Database,
     span: "md:col-span-1 md:row-start-1 md:col-start-4"
   },
