@@ -27,8 +27,8 @@ const services = [
     span: "md:col-span-2 md:row-start-2 md:col-start-3"
   },
   {
-    title: "AI Content Systems",
-    description: "Deploy AI platforms to create brand-aligned articles, emails, and social content. Every piece is tuned to your voice, optimized for engagement, and scaled effortlessly to meet your needs.",
+    title: "AI Video Production",
+    description: "Transform your video content with AI-powered production tools. From scripting to editing, we help you create engaging videos that capture your brand's essence while saving time and resources.",
     icon: FileText,
     span: "md:col-span-1 md:row-start-2 md:col-start-1"
   },
