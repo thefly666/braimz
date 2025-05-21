@@ -48,12 +48,12 @@ export function PricingSection() {
 
           {/* Right side - Features */}
           <Card className="bg-black/50 border-neutral-800 p-8 sm:p-10 group hover:border-[#558dca]/50 transition-colors duration-300 h-full">
-            <div className="flex flex-col h-full items-center text-center">
+            <div className="flex flex-col h-full">
               <h4 className="text-neutral-200 text-2xl font-semibold mb-6">Included in <em>all plans</em>:</h4>
             
               <ul className="space-y-4 flex-grow w-full max-w-lg">
               {features.map((feature) => (
-                <li key={feature} className="flex items-center gap-3 justify-center">
+                <li key={feature} className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-[#558dca] flex-shrink-0" />
                   <span className="text-neutral-400">{feature}</span>
                 </li>
