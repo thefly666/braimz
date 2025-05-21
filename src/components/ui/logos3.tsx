@@ -20,7 +20,7 @@ export function Logos3() {
   return (
     <div className="w-full bg-black py-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-black/50 border border-neutral-800 hover:border-[#558dca]/50 transition-colors duration-300 rounded-lg p-8">
+        <div className="bg-black/50 border-[0.75px] border-neutral-800 hover:border-[#558dca]/50 transition-colors duration-300 rounded-lg p-8">
           <div className="flex justify-center items-center gap-8 overflow-hidden">
             <div className="flex items-center gap-8 animate-scroll">
               {logos.map((logo, index) => (
