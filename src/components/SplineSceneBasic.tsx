@@ -32,7 +32,7 @@ export function SplineSceneBasic() {
         {/* Left content - Text */}
         <div className="w-full md:w-[40%] p-4 sm:p-6 md:p-8 flex flex-col justify-center items-center">
           <img 
-            src="/assets/images/Braimz_Logo_White.png" 
+            src="/Braimz_Logo_White.png" 
             alt="Braimz Logo" 
             className="h-16 w-auto object-contain mb-8"
           />
