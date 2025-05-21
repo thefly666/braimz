@@ -22,7 +22,7 @@ const services = [
   },
   {
     title: "Predictive UX Design",
-    description: "Design customer journeys with AI behavior prediction. We use machine learning to create websites and landing pages that adapt dynamically, enhancing user experiences for every visitor.",
+    description: "Design customer journeys with AI behavior prediction. We use machine learning to create websites and landing pages that adapt dynamically, enhancing user experiences for every visitor. Our solutions improve engagement, boost conversions, and deliver personalized experiences tailored to your brand.",
     icon: MousePointer,
     span: "md:col-span-2 md:row-start-2 md:col-start-3"
   },

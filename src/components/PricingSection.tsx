@@ -43,7 +43,7 @@ export function PricingSection() {
             </p>
             
             <button className="w-full py-4 bg-[#558dca] hover:bg-[#558dca]/80 text-white font-medium rounded-lg transition-colors">
-              Get in Touch
+              Get in TOUCH
             </button>
           </Card>
 

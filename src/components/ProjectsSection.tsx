@@ -9,12 +9,12 @@ const strategies = [
   },
   {
     title: "Readiness Assessment",
-    description: "Determine your organization's aptitude for adopting Generative AI and which teams are best positioned to pilot the adoption of AI.",
+    description: "Determine your organization's aptitude for adopting Generative AI and which teams are best positioned to pilot the adoption of AI. We evaluate your infrastructure, team skills, and processes to ensure successful AI adoption.",
     icon: ClipboardCheck
   },
   {
     title: "Prioritized Action Plan",
-    description: "Evaluate and select AI tools based on the most impactful workflows, integration requirements and your company's data strategy.",
+    description: "Evaluate and select AI tools based on the most impactful workflows, integration requirements and your company's data strategy. We focus on scalability and seamless integration to align with your business goals.",
     icon: ListTodo
   }
 ]
