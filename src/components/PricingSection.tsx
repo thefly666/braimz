@@ -33,9 +33,7 @@ export function PricingSection() {
             </h3>
             
             <p className="text-white/60 text-lg sm:text-xl leading-relaxed mb-8">
-              From basic asset production and motion graphics to video ads and brand strategy, 
-              a Superside subscription lets you choose how you want to use your budget every 
-              month based on your business needs.
+              Our tailored AI consultancy plans are designed to meet your unique needs, whether you're starting with strategy or scaling with advanced solutions. Work with our experts to unlock AI's potential for your business.
             </p>
             
             <p className="text-white/60 text-base mb-8">
