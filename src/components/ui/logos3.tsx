@@ -1,54 +1,71 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef } from "react";
+import { Card } from "@/components/ui/card";
 
 export function Logos3() {
-  const scrollRef = useRef<HTMLDivElement>(null)
-  const containerRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const scrollContainer = scrollRef.current
-    const container = containerRef.current
-    
-    if (!scrollContainer || !container) return
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
 
-    // Clone the content for seamless scrolling
-    const content = container.innerHTML
-    container.innerHTML = content + content
+    let animationFrameId: number;
+    let scrollPos = 0;
+    const scrollWidth = scrollContainer.scrollWidth / 2;
 
     const scroll = () => {
-      if (scrollContainer.scrollLeft >= container.clientWidth / 2) {
-        scrollContainer.scrollLeft = 0
-      } else {
-        scrollContainer.scrollLeft += 1
+      scrollPos += 0.5;
+      if (scrollPos >= scrollWidth) {
+        scrollPos = 0;
       }
-    }
+      if (scrollContainer) {
+        scrollContainer.style.transform = `translateX(-${scrollPos}px)`;
+      }
+      animationFrameId = requestAnimationFrame(scroll);
+    };
 
-    const interval = setInterval(scroll, 30)
-    return () => clearInterval(interval)
-  }, [])
+    animationFrameId = requestAnimationFrame(scroll);
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
+
+  const logos = [
+    "/assets/images/logos/logo_authentica.png",
+    "/assets/images/logos/logo_codeverify.png",
+    "/assets/images/logos/logo_hometrics.png",
+    "/assets/images/logos/logo_leadlink.png",
+    "/assets/images/logos/logo_trendswap.png",
+    "/assets/images/logos/logo_wanted.png",
+    "/assets/images/logos/logo_youtubecondensed.png",
+    "/assets/images/logos/logo_zapai.png",
+  ];
 
   return (
-    <div className="w-full bg-black/50 backdrop-blur-sm py-8 border-y border-neutral-800">
-      <div className="max-w-7xl mx-auto">
-        <div 
-          ref={scrollRef}
-          className="overflow-x-hidden whitespace-nowrap"
-          style={{ WebkitOverflowScrolling: 'touch' }}
-        >
-          <div 
-            ref={containerRef}
-            className="inline-block whitespace-nowrap"
+    <Card className="w-full bg-black border-neutral-800 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+        <div ref={containerRef} className="w-full overflow-hidden">
+          <div
+            ref={scrollRef}
+            className="flex items-center gap-12 whitespace-nowrap"
+            style={{ width: "fit-content" }}
           >
-            <img src="/assets/images/logos/logo_hometrics.png" alt="Hometrics" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
-            <img src="/assets/images/logos/logo_leadlink.png" alt="LeadLink" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
-            <img src="/assets/images/logos/logo_trendswap.png" alt="TrendSwap" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
-            <img src="/assets/images/logos/logo_wanted.png" alt="Wanted" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
-            <img src="/assets/images/logos/logo_youtubecondensed.png" alt="YouTube Condensed" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
-            <img src="/assets/images/logos/logo_zapai.png" alt="ZapAI" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
-            <img src="/assets/images/logos/logo_authentica.png" alt="Authentica" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
-            <img src="/assets/images/logos/logo_codeverify.png" alt="CodeVerify" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
+            {[...logos, ...logos].map((logo, index) => (
+              <div
+                key={index}
+                className="w-32 h-12 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity"
+              >
+                <img
+                  src={logo}
+                  alt={`Client logo ${index + 1}`}
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    </div>
-  )
+    </Card>
+  );
 }
