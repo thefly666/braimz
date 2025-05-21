@@ -4,13 +4,13 @@ import { Brain, Target, Database, MousePointer, FileText, Megaphone, Share2, Pre
 const services = [
   {
     title: "Brand Intelligence",
-    description: "Craft a brand strategy using AI-driven market analysis, customer sentiment tracking, and predictive insights. We deliver tailored brand architectures that are informed, adaptive, and designed for sustainable future growth.",
+    description: "Craft a brand strategy fueled by AI-driven market analysis, customer sentiment tracking, and predictive insights. We deliver brand architectures that are deeply informed, adaptive, and built for future growth.",
     icon: Brain, 
     span: "md:col-span-2 md:row-start-1 md:col-start-1"
   },
   {
-    title: "Predictive UX Design",
-    description: "Design customer journeys with AI behavior prediction. We use machine learning to create websites and landing pages that adapt dynamically, enhancing user experiences for every visitor.",
+    title: "Campaign Optimization",
+    description: "Transform your marketing campaigns with AI-driven audience targeting, creative testing, and real-time performance optimization, ensuring maximum impact across every channel.",
     icon: Target,
     span: "md:col-span-1 md:row-start-1 md:col-start-3"
   },
@@ -39,22 +39,16 @@ const services = [
     span: "md:col-span-1 md:row-start-2 md:col-start-2"
   },
   {
-    title: "Social Growth AI",
-    description: "Harness AI to unlock organic and paid social media growth. We manage content creation, trend detection, scheduling, and optimization, ensuring your brand remains visible and relevant.",
-    icon: Share2,
-    span: "md:col-span-2 md:row-start-3 md:col-start-1"
-  },
-  {
     title: "Executive Presentations",
     description: "Develop persuasive pitch decks and keynote presentations with AI-assisted storytelling, design precision, and audience targeting strategies — elevating every executive interaction.",
     icon: PresentationIcon,
-    span: "md:col-span-1 md:row-start-3 md:col-start-3"
+    span: "md:col-span-2 md:row-start-3 md:col-start-1"
   },
   {
     title: "Innovation Labs",
     description: "Partner with us to explore new product ideas, service innovations, and market expansion strategies using AI-assisted ideation, competitive intelligence, and go-to-market simulations.",
     icon: Lightbulb,
-    span: "md:col-span-1 md:row-start-3 md:col-start-4"
+    span: "md:col-span-2 md:row-start-3 md:col-start-3"
   }
 ]
 
