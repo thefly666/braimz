@@ -20,42 +20,46 @@ export function PricingSection() {
           <h2 className="text-4xl font-bold text-white/50 mb-6">Pricing</h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 items-start">
+        <div className="grid lg:grid-cols-2 gap-8">
           {/* Left side - Pricing info */}
-          <Card className="bg-black/50 border-neutral-800 p-8 sm:p-10 group hover:border-[#558dca]/50 transition-colors duration-300">
-            <div className="inline-block px-4 py-1 rounded-full bg-[#558dca]/10 text-[#558dca] text-sm font-medium mb-6 group-hover:bg-[#558dca]/20 transition-colors duration-300">
+          <Card className="bg-black/50 border-neutral-800 p-8 sm:p-10 group hover:border-[#558dca]/50 transition-colors duration-300 h-full">
+            <div className="flex flex-col h-full">
+              <div className="inline-block px-4 py-1 rounded-full bg-[#558dca]/10 text-[#558dca] text-sm font-medium mb-6 group-hover:bg-[#558dca]/20 transition-colors duration-300">
               STARTING AT $6,000 PER MONTH
-            </div>
+              </div>
             
-            <h3 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+              <h3 className="text-4xl sm:text-5xl font-bold text-white mb-6">
               Flexible plans for every business
-            </h3>
+              </h3>
             
-            <p className="text-white/60 text-lg sm:text-xl leading-relaxed mb-8">
+              <p className="text-white/60 text-lg sm:text-xl leading-relaxed mb-8">
               Our tailored AI consultancy plans are designed to meet your unique needs, whether you're starting with strategy or scaling with advanced solutions. Work with our experts to unlock AI's potential for your business.
-            </p>
+              </p>
             
-            <p className="text-white/60 text-base mb-8">
+              <p className="text-white/60 text-base mb-8">
               Typical subscriptions range from $6,000 to $100,000 USD/month.
-            </p>
+              </p>
             
-            <button className="w-full py-4 bg-[#558dca] hover:bg-[#558dca]/80 text-white font-medium rounded-lg transition-colors">
+              <button className="w-full py-4 bg-[#558dca] hover:bg-[#558dca]/80 text-white font-medium rounded-lg transition-colors mt-auto">
               Get in Touch
-            </button>
+              </button>
+            </div>
           </Card>
 
           {/* Right side - Features */}
-          <Card className="bg-black/50 border-neutral-800 p-8 sm:p-10 group hover:border-[#558dca]/50 transition-colors duration-300">
-            <h4 className="text-neutral-200 text-2xl font-semibold mb-2">Included in <em>all plans</em>:</h4>
+          <Card className="bg-black/50 border-neutral-800 p-8 sm:p-10 group hover:border-[#558dca]/50 transition-colors duration-300 h-full">
+            <div className="flex flex-col h-full">
+              <h4 className="text-neutral-200 text-2xl font-semibold mb-6">Included in <em>all plans</em>:</h4>
             
-            <ul className="space-y-4">
+              <ul className="space-y-4 flex-grow">
               {features.map((feature) => (
                 <li key={feature} className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-[#558dca] flex-shrink-0" />
                   <span className="text-neutral-400">{feature}</span>
                 </li>
               ))}
-            </ul>
+              </ul>
+            </div>
           </Card>
         </div>
       </div>
