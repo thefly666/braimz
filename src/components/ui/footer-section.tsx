@@ -17,7 +17,11 @@ function Footerdemo() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="relative">
-            <h2 className="mb-4 text-3xl font-bold tracking-tight text-neutral-200">Stay Connected</h2>
+            <img 
+              src="/assets/images/Braimz_Logo_White.png"
+              alt="Braimz Logo"
+              className="h-8 w-auto mb-4"
+            />
             <p className="mb-6 text-neutral-400">
               Join our newsletter for the latest updates and exclusive offers.
             </p>
