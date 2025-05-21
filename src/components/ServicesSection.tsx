@@ -76,8 +76,8 @@ export function ServicesSection() {
               className={`${service.span} bg-black/50 border-neutral-800 hover:border-[#558dca]/50 transition-colors duration-300`}
             >
               <div className="h-full p-8 flex flex-col">
-                <div className="flex items-center gap-4 mb-4">
-                  {service.icon && <service.icon className="w-8 h-8 text-[#558dca]" />}
+                <div className="flex items-center gap-4 mb-4 relative">
+                  {service.icon && <service.icon className="w-12 h-12 text-[#558dca]" />}
                   <h3 className="text-xl font-semibold text-white">{service.title}</h3>
                 </div>
                 <p className="text-white/60 text-base leading-relaxed flex-grow">
