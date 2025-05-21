@@ -2,15 +2,14 @@ import { Card } from "@/components/ui/card"
 import { Check, CreditCard } from "lucide-react"
 
 const features = [
-  "Access to all creative services",
-  "Dedicated creative project manager and customer success",
-  "Turnaround times starting at 12 hours",
-  "Global timezone coverage",
-  "AI-enhanced services",
-  "Unlimited API calls to integrations",
-  "Unlimited users and asset storage",
-  "Support for multiple brands",
-  "Access to Superspace platform"
+  "Personalized AI strategy consultation",
+  "Access to our full suite of AI services",
+  "Dedicated project manager support",
+  "Ongoing performance analysis and optimization",
+  "Secure data handling and compliance",
+  "Flexible plan adjustments as needed",
+  "Priority support for referred clients",
+  "Access to exclusive AI insights and trends"
 ]
 
 export function PricingSection() {
