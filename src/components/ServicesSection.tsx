@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card"
-import { Brain, Target, Database, MousePointer, FileText, Megaphone, Share2, PresentationIcon, Lightbulb } from "lucide-react"
+import { Brain, Target, Database, MousePointer, Video, Megaphone, Share2, PresentationIcon, Lightbulb } from "lucide-react"
 
 const services = [
   {
@@ -28,8 +28,8 @@ const services = [
   },
   {
     title: "AI Video Production",
-    description: "Transform your video content with AI-powered production tools. From scripting to editing, we help you create engaging videos that capture your brand's essence while saving time and resources.",
-    icon: FileText,
+    description: "Bring your brand to life with AI video production. We combine scripting, voiceovers, and editing to deliver cinematic videos faster—with a human-quality finish tailored to you.",
+    icon: Video,
     span: "md:col-span-1 md:row-start-2 md:col-start-1"
   },
   {
