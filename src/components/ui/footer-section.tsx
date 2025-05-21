@@ -44,17 +44,14 @@ function Footerdemo() {
               <a href="#" className="block transition-colors text-neutral-400 hover:text-[#558dca]">
                 Home
               </a>
-              <a href="#" className="block transition-colors text-neutral-400 hover:text-[#558dca]">
-                About Us
+              <a href="#about" className="block transition-colors text-neutral-400 hover:text-[#558dca]">
+                About
               </a>
-              <a href="#" className="block transition-colors text-neutral-400 hover:text-[#558dca]">
-                Services
+              <a href="#services" className="block transition-colors text-neutral-400 hover:text-[#558dca]">
+                Our Services
               </a>
-              <a href="#" className="block transition-colors text-neutral-400 hover:text-[#558dca]">
-                Products
-              </a>
-              <a href="#" className="block transition-colors text-neutral-400 hover:text-[#558dca]">
-                Contact
+              <a href="#pricing" className="block transition-colors text-neutral-400 hover:text-[#558dca]">
+                Pricing
               </a>
             </nav>
           </div>
