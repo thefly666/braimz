@@ -15,7 +15,7 @@ export function Logos3() {
   return (
     <div className="w-full bg-black py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <Card className="w-full bg-black/50 border-neutral-800 overflow-hidden">
+        <Card className="w-full bg-black/50 border-neutral-800 overflow-hidden hover:border-[#558dca]/50 transition-colors duration-300">
           <div className="relative flex overflow-x-hidden">
             <div className="py-12 animate-scroll flex space-x-16 whitespace-nowrap">
               {logos.map((logo, index) => (
