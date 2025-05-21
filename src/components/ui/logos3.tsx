@@ -18,7 +18,7 @@ export function Logos3() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [AutoScroll()])
 
   return (
-    <div className="w-full bg-black py-8">
+    <div className="w-full bg-black py-16 overflow-hidden border border-neutral-800 rounded-lg mx-auto max-w-7xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex gap-4 animate-scroll">
