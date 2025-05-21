@@ -18,11 +18,11 @@ export function Logos3() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [AutoScroll()])
 
   return (
-    <div className="w-full bg-black py-16 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="bg-black/50 border-[0.75px] border-neutral-800 hover:border-[#558dca]/50 transition-colors duration-300 rounded-lg p-8">
-          <div className="flex justify-center items-center gap-8 overflow-hidden">
-            <div className="flex items-center gap-8 animate-scroll">
+    <section className="w-full bg-black py-16 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
+        <div className="flex gap-8 animate-scroll">
+          <div className="flex-none flex gap-8">
+            <div className="w-48 h-12 flex items-center justify-center">
               {logos.map((logo, index) => (
                 <div key={index} className="w-48 h-12 flex items-center justify-center">
                   <img src={logo.src} alt={logo.alt} className="h-12 w-auto object-contain" />
@@ -32,6 +32,6 @@ export function Logos3() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
