@@ -8,6 +8,7 @@ import { Logos3 } from './components/ui/logos3';
 import { ServicesSection } from './components/ServicesSection';
 import { PricingSection } from './components/PricingSection';
 import ErrorBoundary from './components/ErrorBoundary';
+import { BackToTop } from './components/BackToTop';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <ServicesSection />
       <PricingSection />
       <Footer />
+      <BackToTop />
     </div>
   );
 }
