@@ -9,8 +9,8 @@ const services = [
     span: "md:col-span-2 md:row-start-1 md:col-start-1"
   },
   {
-    title: "Campaign Optimization",
-    description: "Transform your marketing campaigns with AI-driven audience targeting, creative testing, and real-time performance optimization, ensuring maximum impact across every channel.",
+    title: "Predictive UX Design",
+    description: "Design customer journeys powered by AI behaviour prediction. Our approach uses machine learning to shape websites, landing pages, and digital experiences that adapt dynamically to each visitor.",
     icon: Target,
     span: "md:col-span-1 md:row-start-1 md:col-start-3"
   },
