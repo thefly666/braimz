@@ -2,6 +2,7 @@ import './App.css';
 import { SplineSceneBasic } from './components/SplineSceneBasic';
 import { NavBarDemo } from './components/NavBarDemo';
 import { ProjectsSection } from './components/ProjectsSection';
+import { AboutUsSection } from './components/AboutUsSection';
 import { Footer } from './components/Footer';
 import { Logos3 } from './components/ui/logos3';
 import { ServicesSection } from './components/ServicesSection';
@@ -19,6 +20,7 @@ function App() {
         </main>
       </ErrorBoundary>
       <ProjectsSection />
+      <AboutUsSection />
       <ServicesSection />
       <PricingSection />
       <Footer />
