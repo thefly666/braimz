@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card"
-import { Brain, Target, Database, MousePointer, Video, Megaphone, FileJson, Lightbulb } from "lucide-react"
+import { Brain, Target, Database, MousePointer, Video, Megaphone, FileJson, ShieldCheck } from "lucide-react"
 
 const services = [
   {
@@ -45,9 +45,9 @@ const services = [
     span: "md:col-span-2 md:row-start-3 md:col-start-1"
   },
   {
-    title: "Innovation Labs",
-    description: "Partner with us to explore new product ideas, service innovations, and market expansion strategies using AI-assisted ideation, competitive intelligence, and go-to-market simulations.",
-    icon: Lightbulb,
+    title: "Fair AI Checks",
+    description: "We review your AI to ensure fairness and trust, avoiding errors and building customer confidence.",
+    icon: ShieldCheck,
     span: "md:col-span-2 md:row-start-3 md:col-start-3"
   }
 ]
