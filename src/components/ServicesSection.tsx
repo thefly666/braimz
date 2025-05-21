@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card"
-import { Brain, Target, Database, MousePointer, Video, Megaphone, Share2, PresentationIcon, Lightbulb } from "lucide-react"
+import { Brain, Target, Database, MousePointer, Video, Megaphone, FileJson, Lightbulb } from "lucide-react"
 
 const services = [
   {
@@ -39,9 +39,9 @@ const services = [
     span: "md:col-span-1 md:row-start-2 md:col-start-2"
   },
   {
-    title: "Executive Presentations",
-    description: "Develop persuasive pitch decks and keynote presentations with AI-assisted storytelling, design precision, and audience targeting strategies — elevating every executive interaction.",
-    icon: PresentationIcon,
+    title: "Data Cleanup and Setup",
+    description: "We organize and clean your data for AI, ensuring accurate, reliable results tailored to your business needs.",
+    icon: FileJson,
     span: "md:col-span-2 md:row-start-3 md:col-start-1"
   },
   {
