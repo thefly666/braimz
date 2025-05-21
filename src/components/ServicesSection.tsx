@@ -15,7 +15,7 @@ const services = [
     span: "md:col-span-1 md:row-start-1 md:col-start-3"
   },
   {
-    title: "RAG Systems",
+    title: "AI System Integration",
     description: "Seamlessly integrate AI into your existing tools and systems. We ensure smooth compatibility, scalability, and adoption, empowering your team to leverage AI effectively across all business operations.",
     icon: Database,
     span: "md:col-span-1 md:row-start-1 md:col-start-4"
