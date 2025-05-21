@@ -5,7 +5,7 @@ export function NavBarDemo() {
   const navItems = [
     { name: 'Home', url: '#', icon: Home },
     { name: 'About', url: '#about', icon: User },
-    { name: 'Projects', url: '#', icon: Briefcase },
+    { name: 'Our Services', url: '#services', icon: Briefcase },
     { name: 'Pricing', url: '#pricing', icon: CreditCard }
   ]
 
