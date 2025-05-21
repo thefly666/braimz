@@ -1,35 +1,54 @@
-import { Card } from "@/components/ui/card"
-
-const logos = [
-  { src: "/assets/images/logos/logo_authentica.png", alt: "Authentica" },
-  { src: "/assets/images/logos/logo_codeverify.png", alt: "CodeVerify" },
-  { src: "/assets/images/logos/logo_hometrics.png", alt: "Hometrics" },
-  { src: "/assets/images/logos/logo_leadlink.png", alt: "LeadLink" },
-  { src: "/assets/images/logos/logo_trendswap.png", alt: "TrendSwap" },
-  { src: "/assets/images/logos/logo_wanted.png", alt: "Wanted" },
-  { src: "/assets/images/logos/logo_youtubecondensed.png", alt: "YouTube Condensed" },
-  { src: "/assets/images/logos/logo_zapai.png", alt: "ZapAI" }
-];
+import { useEffect, useRef } from "react"
 
 export function Logos3() {
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current
+    const container = containerRef.current
+    
+    if (!scrollContainer || !container) return
+
+    // Clone the content for seamless scrolling
+    const content = container.innerHTML
+    container.innerHTML = content + content
+
+    const scroll = () => {
+      if (scrollContainer.scrollLeft >= container.clientWidth / 2) {
+        scrollContainer.scrollLeft = 0
+      } else {
+        scrollContainer.scrollLeft += 1
+      }
+    }
+
+    const interval = setInterval(scroll, 30)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
-    <section className="w-full bg-black py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <Card className="bg-black/50 border-neutral-800 overflow-hidden">
-          <div className="relative flex overflow-x-hidden">
-            <div className="animate-scroll py-8 flex space-x-16 whitespace-nowrap">
-              {logos.concat(logos).map((logo, idx) => (
-                <img
-                  key={idx}
-                  src={logo.src}
-                  alt={logo.alt}
-                  className="h-8 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300"
-                />
-              ))}
-            </div>
+    <div className="w-full bg-black/50 backdrop-blur-sm py-8 border-y border-neutral-800">
+      <div className="max-w-7xl mx-auto">
+        <div 
+          ref={scrollRef}
+          className="overflow-x-hidden whitespace-nowrap"
+          style={{ WebkitOverflowScrolling: 'touch' }}
+        >
+          <div 
+            ref={containerRef}
+            className="inline-block whitespace-nowrap"
+          >
+            <img src="/assets/images/logos/logo_hometrics.png" alt="Hometrics" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
+            <img src="/assets/images/logos/logo_leadlink.png" alt="LeadLink" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
+            <img src="/assets/images/logos/logo_trendswap.png" alt="TrendSwap" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
+            <img src="/assets/images/logos/logo_wanted.png" alt="Wanted" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
+            <img src="/assets/images/logos/logo_youtubecondensed.png" alt="YouTube Condensed" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
+            <img src="/assets/images/logos/logo_zapai.png" alt="ZapAI" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
+            <img src="/assets/images/logos/logo_authentica.png" alt="Authentica" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
+            <img src="/assets/images/logos/logo_codeverify.png" alt="CodeVerify" className="h-8 inline-block mx-12 opacity-50 hover:opacity-100 transition-opacity" />
           </div>
-        </Card>
+        </div>
       </div>
-    </section>
-  );
+    </div>
+  )
 }
