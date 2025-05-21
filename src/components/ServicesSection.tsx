@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card"
-import { Brain, Target, Database, MousePointer, FileText, Video, Share2, PresentationIcon, Lightbulb } from "lucide-react"
+import { Brain, Target, Database, MousePointer, FileText, Megaphone, Share2, PresentationIcon, Lightbulb } from "lucide-react"
 
 const services = [
   {
@@ -35,7 +35,7 @@ const services = [
   {
     title: "AI Marketing and Social Growth",
     description: "Harness AI to unlock organic and paid social media growth. We manage content creation, trend detection, scheduling, and optimization, ensuring your brand remains visible and relevant.",
-    icon: Video,
+    icon: Megaphone,
     span: "md:col-span-1 md:row-start-2 md:col-start-2"
   },
   {
