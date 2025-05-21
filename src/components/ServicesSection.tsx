@@ -33,8 +33,8 @@ const services = [
     span: "md:col-span-1 md:row-start-2 md:col-start-1"
   },
   {
-    title: "AI Video Production",
-    description: "Bring your brand to life with cinematic AI video production. We combine AI scripting, voiceovers, editing, and enhancement tools to deliver custom videos faster — and with a human-quality finish.",
+    title: "AI Marketing and Social Growth",
+    description: "Harness AI to unlock organic and paid social media growth. We manage content creation, trend detection, scheduling, and optimization, ensuring your brand remains visible and relevant.",
     icon: Video,
     span: "md:col-span-1 md:row-start-2 md:col-start-2"
   },
