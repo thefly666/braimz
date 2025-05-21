@@ -28,7 +28,7 @@ const services = [
   },
   {
     title: "AI Content Systems",
-    description: "Deploy AI platforms that generate brand-aligned articles, email sequences, social content, and more. Every word and image is tuned to your voice, optimized for engagement, and scaled effortlessly.",
+    description: "Deploy AI platforms to create brand-aligned articles, emails, and social content. Every piece is tuned to your voice, optimized for engagement, and scaled effortlessly to meet your needs.",
     icon: FileText,
     span: "md:col-span-1 md:row-start-2 md:col-start-1"
   },
