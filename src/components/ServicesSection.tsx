@@ -4,7 +4,7 @@ import { Brain, Target, Database, MousePointer, FileText, Video, Share2, Present
 const services = [
   {
     title: "Brand Intelligence",
-    description: "Craft a brand strategy fueled by AI-driven market analysis, customer sentiment tracking, and predictive consumer insights. We deliver brand architectures that are deeply informed, adaptive, and built for future growth.",
+    description: "Craft a brand strategy using AI-driven market analysis, customer sentiment tracking, and predictive insights. We deliver tailored brand architectures that are informed, adaptive, and designed for sustainable future growth.",
     icon: Brain, 
     span: "md:col-span-2 md:row-start-1 md:col-start-1"
   },
