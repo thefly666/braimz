@@ -33,7 +33,7 @@ const services = [
     span: "md:col-span-1 md:row-start-2 md:col-start-1"
   },
   {
-    title: "AI Marketing & Social Growth",
+    title: "AI Marketing Growth",
     description: "Harness AI to unlock organic and paid social media growth. We manage content creation, trend detection, scheduling, and optimization, ensuring your brand remains visible and relevant.",
     icon: Megaphone,
     span: "md:col-span-1 md:row-start-2 md:col-start-2"
