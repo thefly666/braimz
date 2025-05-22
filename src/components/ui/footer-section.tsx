@@ -32,3 +32,5 @@ function Footerdemo() {
 }
 
 export default Footerdemo;
+  )
+}
