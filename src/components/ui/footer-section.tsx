@@ -58,7 +58,7 @@ export function Footerdemo() {
         </div>
       </div>
       <div className="mt-8 text-left text-sm text-neutral-400">
-        © 2024 Braimz. All rights reserved.
+        <p className="text-sm text-neutral-400">© 2025 Braimz. All rights reserved.</p>
       </div>
     </footer>
   );
