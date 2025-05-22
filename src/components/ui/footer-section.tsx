@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card"
-import { Mail, Phone } from "lucide-react"
+import { Phone, Mail } from "lucide-react"
 
 export function Footerdemo() {
   return (
@@ -12,23 +12,19 @@ export function Footerdemo() {
               alt="Braimz Logo"
               className="h-12 w-auto object-contain mb-8"
             />
-            <div className="flex flex-col items-center gap-4">
-              <a 
-                href="tel:+1234567890" 
-                className="flex items-center gap-2 text-white hover:text-white/80 transition-colors"
-              >
-                <Phone className="w-5 h-5" />
-                <span>(123) 456-7890</span>
-              </a>
-              <a 
-                href="mailto:contact@braimz.ai" 
-                className="flex items-center gap-2 text-white hover:text-white/80 transition-colors"
-              >
-                <Mail className="w-5 h-5" />
-                <span>contact@braimz.ai</span>
-              </a>
+            
+            <div className="flex flex-col items-center gap-4 mb-8">
+              <div className="flex items-center gap-2">
+                <Phone className="w-5 h-5 text-white" />
+                <span className="text-white">(123) 456-7890</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="w-5 h-5 text-white" />
+                <span className="text-white">contact@braimz.ai</span>
+              </div>
             </div>
-            <p className="mt-8 text-white/60 text-center">
+
+            <p className="text-neutral-400 text-sm">
               © 2024 Braimz. All rights reserved.
             </p>
           </div>
