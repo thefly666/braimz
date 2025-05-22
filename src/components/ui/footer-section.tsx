@@ -58,10 +58,24 @@ function Footerdemo() {
           </div>
           <div>
             <h3 className="mb-4 text-lg font-semibold text-neutral-200">Contact Us</h3>
-            <address className="space-y-2 text-sm not-italic text-neutral-400">
-              <p>(289) 212-9006</p>
-              <p>hello@braimz.com</p>
-            </address>
+            <ul className="space-y-2">
+              <li>
+                <a 
+                  href="tel:+12892129006" 
+                  className="text-neutral-400 no-underline hover:text-[#558dca] transition-colors"
+                >
+                  Phone: (289) 212-9006
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="mailto:hello@braimz.com?subject=Inquiry" 
+                  className="text-neutral-400 no-underline hover:text-[#558dca] transition-colors"
+                >
+                  Email: hello@braimz.com
+                </a>
+              </li>
+            </ul>
           </div>
           <div className="relative">
             <h3 className="mb-4 text-lg font-semibold text-neutral-200">Follow Us</h3>
