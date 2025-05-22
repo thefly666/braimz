@@ -55,17 +55,17 @@ export function Footerdemo() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-[#558dca]" />
-                  <p>
-                    <a href="tel:+12892129006" className="hover:text-[#558dca] transition-colors">
-                      Phone: (289) 212-9006
+                  <p className="text-white">
+                    <a href="tel:+12892129006" className="text-white hover:text-white/80">
+                      (289) 212-9006
                     </a>
                   </p>
-                  <p>
+                  <p className="text-white">
                     <a 
                       href="mailto:hello@braimz.com?subject=Inquiry" 
-                      className="hover:text-[#558dca] transition-colors"
+                      className="text-white hover:text-white/80"
                     >
-                      Email: hello@braimz.com
+                      hello@braimz.com
                     </a>
                   </p>
                 </div>
