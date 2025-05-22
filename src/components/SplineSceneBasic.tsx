@@ -42,11 +42,12 @@ export function SplineSceneBasic() {
           <p className="mt-6 text-lg sm:text-xl text-neutral-300 text-center max-w-lg leading-relaxed">
             We are an AI consulting firm that seamlessly integrates artificial intelligence into existing technologies and workflows, enhancing efficiency and maximizing ROI.
           </p>
-          <button
+          <a
+            href="mailto:hello@braimz.com?subject=Inquiry"
             className="mt-8 sm:mt-[50px] px-8 sm:px-12 py-2.5 sm:py-3 bg-[#558dca] text-white rounded-lg font-medium transition-colors hover:bg-[#558dca]/70 text-base sm:text-lg"
           >
             Get in Touch
-          </button>
+          </a>
         </div>
         
         {/* Right content - 3D Scene */}
