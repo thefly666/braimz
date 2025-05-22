@@ -36,34 +36,33 @@ export function NavBar({ items }: NavBarProps) {
   }, [])
 
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 bg-transparent">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-end items-center py-6">
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white hover:text-[#558dca] transition-colors"
-          >
-            <Menu className="h-6 w-6" />
-          </button>
-
-          {/* Desktop navigation */}
-          <div className="hidden md:flex space-x-8">
+    <nav className="absolute top-0 left-0 right-0 z-50 w-full flex justify-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+        <div className="flex items-center justify-center h-16">
+          {/* Desktop menu */}
+          <div className="hidden md:flex md:items-center md:space-x-12">
             {items.map((item) => (
               <a
                 key={item.name}
                 href={item.url}
-                className={cn(
-                  "flex items-center gap-2 text-sm font-medium transition-colors",
-                  activeSection === item.url.slice(1)
-                    ? "text-[#558dca]"
-                    : "text-white hover:text-[#558dca]"
-                )}
+                className={`text-base font-medium text-neutral-300 hover:text-white transition-colors duration-200 ${
+                  activeSection === item.url ? 'text-white' : ''
+                }`}
               >
                 <item.icon className="h-4 w-4" />
                 {item.name}
               </a>
             ))}
+          </div>
+
+          {/* Mobile menu */}
+          <div className="md:hidden">
+            <button
+              className="inline-flex items-center justify-center p-2 rounded-md text-neutral-300 hover:text-white focus:outline-none absolute right-4"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <Menu className="h-6 w-6" />
+            </button>
           </div>
 
           {/* Mobile menu */}
