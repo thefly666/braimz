@@ -55,12 +55,19 @@ export function Footerdemo() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-[#558dca]" />
-                  <p className="text-white/60">+1 (555) 123-4567</p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-[#558dca]" />
-                  <p className="text-white/60">contact@braimz.ai</p>
-                </div>
+                <p>
+                  <a href="tel:+12892129006" className="hover:text-[#558dca] transition-colors">
+                    Phone: (289) 212-9006
+                  </a>
+                </p>
+                <p>
+                  <a 
+                    href="mailto:hello@braimz.com?subject=Inquiry" 
+                    className="hover:text-[#558dca] transition-colors"
+                  >
+                    Email: hello@braimz.com
+                  </a>
+                </p>
               </div>
             </div>
           </div>
