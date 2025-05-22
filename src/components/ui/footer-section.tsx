@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/tooltip"
 import { Facebook, Instagram, Linkedin, Send, Twitter } from "lucide-react"
 
-export function Footerdemo() {
+export default function Footerdemo() {
   return (
     <footer className="w-full bg-black py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -73,5 +73,3 @@ export function Footerdemo() {
     </footer>
   );
 }
-
-export { Footerdemo }
