@@ -1,17 +1,23 @@
-import { Home, User, Briefcase, CreditCard } from 'lucide-react'
+import { User, Briefcase, CreditCard } from 'lucide-react'
 import { NavBar } from './ui/tubelight-navbar'
 
-interface NavItem {
-  name: string;
-  url: string;
-  icon: React.ElementType;
-}
-
 export function NavBarDemo() {
-  const navItems: NavItem[] = [
-    { name: 'About', url: '#about', icon: User },
-    { name: 'Our Services', url: '#services', icon: Briefcase },
-    { name: 'Pricing', url: '#pricing', icon: CreditCard }
+  const navItems = [
+    {
+      name: 'About',
+      url: '#about',
+      icon: <User className="h-4 w-4 mr-2" />
+    },
+    {
+      name: 'Our Services',
+      url: '#services',
+      icon: <Briefcase className="h-4 w-4 mr-2" />
+    },
+    {
+      name: 'Pricing',
+      url: '#pricing',
+      icon: <CreditCard className="h-4 w-4 mr-2" />
+    }
   ]
 
   return <NavBar items={navItems} />
