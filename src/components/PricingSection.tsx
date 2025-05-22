@@ -40,9 +40,12 @@ export function PricingSection() {
               Typical subscriptions range from $6,000 to $100,000 USD/month.
               </p>
             
-              <button className="w-full py-4 bg-[#558dca] hover:bg-[#558dca]/80 text-white font-medium rounded-lg transition-colors mt-auto">
+              <a
+                href="mailto:hello@braimz.com?subject=Inquiry"
+                className="w-full py-4 bg-[#558dca] hover:bg-[#558dca]/80 text-white font-medium rounded-lg transition-colors mt-auto text-center block"
+              >
               Get in Touch
-              </button>
+              </a>
             </div>
           </Card>
 
