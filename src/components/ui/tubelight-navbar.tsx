@@ -45,12 +45,13 @@ export function NavBar({ items }: NavBarProps) {
               <a
                 key={item.name}
                 href={item.url}
-                className={`text-base font-medium text-neutral-300 hover:text-white transition-colors duration-200 ${
-                  activeSection === item.url ? 'text-white' : ''
-                }`}
+                className="group relative px-4 py-2 text-base text-neutral-400 transition-colors hover:text-neutral-50"
               >
-                <item.icon className="h-4 w-4" />
-                {item.name}
+                <span className="flex items-center gap-2">
+                  {item.name}
+                  <item.icon className="w-4 h-4" />
+                </span>
+                <div className="absolute inset-x-0 bottom-0 h-px w-full bg-gradient-to-r from-transparent via-neutral-500/70 to-transparent scale-x-0 transition-transform group-hover:scale-x-100" />
               </a>
             ))}
           </div>
@@ -78,15 +79,10 @@ export function NavBar({ items }: NavBarProps) {
                   key={item.name}
                   href={item.url}
                   onClick={() => setIsOpen(false)}
-                  className={cn(
-                    "flex items-center gap-2 py-2 text-base font-medium transition-colors",
-                    activeSection === item.url.slice(1)
-                      ? "text-[#558dca]"
-                      : "text-white hover:text-[#558dca]"
-                  )}
+                  className="flex items-center justify-between space-x-2 rounded-lg p-3 text-sm font-medium text-neutral-400 hover:bg-neutral-800/50 hover:text-neutral-50"
                 >
-                  <item.icon className="h-5 w-5" />
-                  {item.name}
+                  <span>{item.name}</span>
+                  <item.icon className="h-4 w-4" />
                 </a>
               ))}
             </div>
