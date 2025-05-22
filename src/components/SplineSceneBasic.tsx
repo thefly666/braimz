@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/tooltip"
 import { Facebook, Instagram, Linkedin, Send, Twitter } from "lucide-react"
 
-function Footerdemo() {
+function SplineSceneBasic() {
   return (
     <footer className="w-full bg-black py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -57,4 +57,4 @@ function Footerdemo() {
   );
 }
 
-export { Footerdemo }
+export { SplineSceneBasic }
