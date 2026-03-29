@@ -17,7 +17,9 @@ export function SplineScene({ scene, className }: SplineSceneProps) {
     if (!canvas) return;
 
     const app = new Application(canvas);
-    app.load(scene);
+    app.load(scene).then(() => {
+      app.setGlobalEvents(true);
+    });
 
     return () => {
       app.dispose();
