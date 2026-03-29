@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395.74 102.86">
+  <defs>
+    <style>
+      .v-white { fill: #ffffff; }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="v-white" y="29.12" width="24.88" height="24.88" rx="4" ry="4"/>
+      <rect class="v-white" x="57.49" y="29.12" width="24.88" height="24.88" rx="4" ry="4"/>
+      <rect class="v-white" y="58.24" width="24.88" height="24.88" rx="4" ry="4"/>
+      <rect class="v-white" x="28.74" y="0" width="24.88" height="24.88" rx="4" ry="4"/>
+      <rect class="v-white" x="28.74" y="29.12" width="24.88" height="24.88" rx="4" ry="4"/>
+      <rect class="v-white" y="0" width="24.88" height="24.88" rx="4" ry="4" opacity="0.5"/>
+      <rect class="v-white" x="57.49" y="0" width="24.88" height="24.88" rx="4" ry="4" opacity="0.5"/>
+      <rect class="v-white" x="28.74" y="58.24" width="24.88" height="24.88" rx="4" ry="4" opacity="0.5"/>
+      <rect class="v-white" x="57.49" y="58.24" width="24.88" height="24.88" rx="4" ry="4"/>
+    </g>
+    <g>
+      <path class="v-white" d="M92.15,0h13.32l8.64,65.16h.24L122.99,0h12.12l-12.72,84h-17.52L92.15,0Z"/>
+      <path class="v-white" d="M141.47,0h13.2v84h-13.2V0Z"/>
+      <path class="v-white" d="M164.51,0h20.16c6.56,0,11.48,1.76,14.76,5.28,3.28,3.52,4.92,8.68,4.92,15.48v42.48c0,6.8-1.64,11.96-4.92,15.48-3.28,3.52-8.2,5.28-14.76,5.28h-20.16V0ZM184.43,72c2.16,0,3.82-.64,4.98-1.92,1.16-1.28,1.74-3.36,1.74-6.24V20.16c0-2.88-.58-4.96-1.74-6.24-1.16-1.28-2.82-1.92-4.98-1.92h-6.72v60h6.72Z"/>
+      <path class="v-white" d="M208.28,0h13.32l8.64,65.16h.24L239.12,0h12.12l-12.72,84h-17.52L208.28,0Z"/>
+      <path class="v-white" d="M264.44,0h17.88l13.68,84h-13.2l-2.4-16.68v.24h-15l-2.4,16.44h-12.24L264.44,0ZM278.84,56.16l-5.88-41.52h-.24l-5.76,41.52h11.88Z"/>
+      <path class="v-white" d="M302.35,0h16.56l12.84,50.28h.24V0h11.76v84h-13.56l-15.84-61.32h-.24v61.32h-11.76V0Z"/>
+      <path class="v-white" d="M363.79,0h17.88l13.68,84h-13.2l-2.4-16.68v.24h-15l-2.4,16.44h-12.24L363.79,0ZM378.19,56.16l-5.88-41.52h-.24l-5.76,41.52h11.88Z"/>
+    </g>
+  </g>
+</svg>
