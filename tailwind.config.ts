@@ -40,6 +40,7 @@ export default {
       animation: {
         spotlight: "spotlight 2000ms ease 750ms 1 forwards",
         scroll: "scroll 40s linear infinite",
+        "scroll-fast": "scroll 15s linear infinite",
       },
       keyframes: {
         spotlight: {

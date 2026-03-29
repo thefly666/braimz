@@ -28,7 +28,7 @@ export function Logos3() {
             style={{ background: "linear-gradient(to left, black, transparent)" }} />
 
           {/* Two identical rows side-by-side; translate -50% loops seamlessly */}
-          <div className="flex animate-scroll py-8">
+          <div className="flex animate-scroll-fast md:animate-scroll py-8">
             {[...logos, ...logos].map((logo, i) => (
               // eslint-disable-next-line @next/next/no-img-element
               <img
